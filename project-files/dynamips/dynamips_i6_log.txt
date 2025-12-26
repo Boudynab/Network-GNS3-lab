@@ -1,0 +1,37 @@
+Dec 27 00:58:23.197 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 27 00:58:23.197 HYPERVISOR: Started on IP = localhost, TCP port = 52290.
+Dec 27 00:58:23.698 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 27 00:58:23.698 HYPERVISOR: exec_cmd: hypervisor working_dir C:\network\networklab2\project-files\dynamips 
+Dec 27 00:58:23.699 GENERAL: working_dir=C:\network\networklab2\project-files\dynamips
+Dec 27 00:58:23.699 HYPERVISOR: exec_cmd: hypervisor working_dir C:\network\networklab2\project-files\dynamips\ee6a5a5d-adbf-4b5d-8dd7-399f10018b69 
+Dec 27 00:58:23.699 GENERAL: working_dir=C:\network\networklab2\project-files\dynamips\ee6a5a5d-adbf-4b5d-8dd7-399f10018b69
+Dec 27 00:58:23.699 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+Dec 27 00:58:23.700 VM: VM R3 created.
+Dec 27 00:58:23.701 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5042 
+Dec 27 00:58:23.701 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Dec 27 00:58:23.701 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 27 00:58:23.701 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Dec 27 00:58:23.701 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:23.701 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60c09aa0 
+Dec 27 00:58:23.702 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/khale/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Dec 27 00:58:23.702 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c203.5f90.0000 
+Dec 27 00:58:23.702 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 27 00:58:23.703 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:23.703 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Dec 27 00:58:23.703 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:23.703 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 NM-4T 
+Dec 27 00:58:23.704 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:23.704 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-1T 
+Dec 27 00:58:23.705 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:23.705 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 32 WIC-2T 
+Dec 27 00:58:23.705 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:23.705 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 48 WIC-1T 
+Dec 27 00:58:25.484 HYPERVISOR: exec_cmd: nio create_udp udp-c1594174-9e09-4d1e-9b58-e6d222aacaa8 10024 127.0.0.1 10025 
+Dec 27 00:58:25.733 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-c1594174-9e09-4d1e-9b58-e6d222aacaa8 
+Dec 27 00:58:25.734 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:26.019 HYPERVISOR: exec_cmd: nio create_udp udp-ba0ee2ea-a309-4585-98ef-bfe97945b865 10030 127.0.0.1 10031 
+Dec 27 00:58:26.022 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-ba0ee2ea-a309-4585-98ef-bfe97945b865 
+Dec 27 00:58:26.023 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 00:58:26.542 HYPERVISOR: exec_cmd: nio create_udp udp-c6c745f0-a4f0-4aa3-a370-587271149fc2 10046 127.0.0.1 10047 
+Dec 27 00:58:26.543 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 16 udp-c6c745f0-a4f0-4aa3-a370-587271149fc2 
+Dec 27 00:58:26.543 HYPERVISOR: exec_cmd: vm get_status R3 

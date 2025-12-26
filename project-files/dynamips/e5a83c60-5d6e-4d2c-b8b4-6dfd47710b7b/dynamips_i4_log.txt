@@ -1,0 +1,58 @@
+Dec 27 00:48:43.860 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 27 00:48:43.861 HYPERVISOR: Started on IP = localhost, TCP port = 62165.
+Dec 27 00:48:43.868 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 27 00:48:43.868 HYPERVISOR: exec_cmd: hypervisor working_dir D:\networkslab\project-files\dynamips 
+Dec 27 00:48:43.868 GENERAL: working_dir=D:\networkslab\project-files\dynamips
+Dec 27 00:48:43.868 HYPERVISOR: exec_cmd: hypervisor working_dir D:\networkslab\project-files\dynamips\915580a5-c97f-4799-bf7c-4a999f7a7ace 
+Dec 27 00:48:43.868 GENERAL: working_dir=D:\networkslab\project-files\dynamips\915580a5-c97f-4799-bf7c-4a999f7a7ace
+Dec 27 00:48:43.902 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Dec 27 00:48:43.902 VM: VM R1 created.
+Dec 27 00:48:43.903 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5015 
+Dec 27 00:48:43.903 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Dec 27 00:48:43.903 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 27 00:48:43.904 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Dec 27 00:48:43.904 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:43.904 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60c09aa0 
+Dec 27 00:48:43.905 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/khale/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Dec 27 00:48:43.905 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.8438.0000 
+Dec 27 00:48:43.905 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 27 00:48:43.906 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:43.906 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Dec 27 00:48:43.906 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:43.906 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4T 
+Dec 27 00:48:43.906 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:43.906 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Dec 27 00:48:43.907 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:43.907 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 32 WIC-2T 
+Dec 27 00:48:43.907 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:43.907 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 48 WIC-1T 
+Dec 27 00:48:45.977 HYPERVISOR: exec_cmd: nio create_udp udp-e267f35c-6ae7-406e-9843-aef25166bc53 10014 127.0.0.1 10015 
+Dec 27 00:48:46.224 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-e267f35c-6ae7-406e-9843-aef25166bc53 
+Dec 27 00:48:46.224 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:46.291 HYPERVISOR: exec_cmd: nio create_udp udp-7763fafd-21af-4a91-9c1c-17aeed1a04e1 10018 127.0.0.1 10019 
+Dec 27 00:48:46.294 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-7763fafd-21af-4a91-9c1c-17aeed1a04e1 
+Dec 27 00:48:46.294 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:46.333 HYPERVISOR: exec_cmd: nio create_udp udp-b4010812-b36b-4385-846d-5b9cb7568316 10022 127.0.0.1 10023 
+Dec 27 00:48:46.336 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-b4010812-b36b-4385-846d-5b9cb7568316 
+Dec 27 00:48:46.336 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:54.474 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Dec 27 00:48:54.475 VM: VM Ghost created.
+Dec 27 00:48:54.475 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/khale/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Dec 27 00:48:54.475 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 27 00:48:54.476 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost D:\networkslab\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+Dec 27 00:48:54.476 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 27 00:48:54.487 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Dec 27 00:48:54.487 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 27 00:48:54.784 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 27 00:48:54.793 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 27 00:48:54.919 VM: VM Ghost shutdown.
+Dec 27 00:48:54.920 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Dec 27 00:48:54.928 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 27 00:48:54.928 VM: VM Ghost destroyed.
+Dec 27 00:48:54.938 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Dec 27 00:48:54.938 HYPERVISOR: exec_cmd: vm set_ghost_file R1 D:\networkslab\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-128.ghost 
+Dec 27 00:48:54.939 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 27 00:48:54.948 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Dec 27 00:48:54.949 HYPERVISOR: exec_cmd: vm start R1 
+Dec 27 00:49:25.264 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 27 00:49:25.276 HYPERVISOR: exec_cmd: vm extract_config R1 
